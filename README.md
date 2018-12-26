@@ -10,7 +10,7 @@ Nødvendigvis mobilvennlig.
 
 ## Takk til
 * [Scout Widgets](https://github.com/scoutgg/widgets) - et effektivt bibliotek for Web Components
-* [Fn-pug](https://github.com/FireNeslo/fn-pug) - En veldig lesbar og oversiktlig template engine (Utviklet av Øystein Østebø Olsen)
+* [Fn-pug](https://github.com/FireNeslo/fn-pug) - En veldig lesbar og oversiktlig template engine (Utviklet av [Øystein Østebø Olsen](https://github.com/fireneslo))
 * Pexels.com for grafikk
 
 ![screenshot](https://github.com/angeltveit/koden/raw/master/public/screenshot.png)
