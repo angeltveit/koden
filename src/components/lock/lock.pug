@@ -1,0 +1,89 @@
+style.
+  :host {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(public/lock.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  input[type="color"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"],
+  select:focus,
+  textarea {
+    font-size: 16px;
+    caret-color: transparent;
+  }
+  .code-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .code-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+    height: 3em;
+    width: 2em;
+    margin: 5px;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, .7));
+  }
+  input {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+  }
+  h3 {
+    color: red;
+    font-size: 3em;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, .7));
+  }
+  h2 {
+    font-family: 'Cairo';
+    color: #fff;
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, .7));
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .error {
+    height: 3em;
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+input(type="tel", (input)=this.updateInput(e), maxlength=this.code.length)
+h2 Tast løsningen:
+.code-container
+  each input in splittedCode
+    .code-block=input
+.error
+  if errored
+    h3 Feil kode!
